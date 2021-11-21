@@ -14,7 +14,7 @@ body {
 }
 
 .about-section {
-  background: url("../img/boy.jpeg") no-repeat left;
+  background: url("boy.jpeg") no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
