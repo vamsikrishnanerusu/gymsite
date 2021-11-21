@@ -14,3 +14,362 @@ body {
   background-size: cover;
   height: 210vh;
 }
+
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+.logo1:hover {
+  color: red;
+  font-size: 24px;
+  transition: all 0.8s ease;
+  letter-spacing: 1.5px;
+}
+
+#Layer_1 {
+  filter: invert(100%);
+  display: block;
+  fill-opacity: 0;
+  stroke: #000;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 2000;
+  animation: tejas 12s ease-in-out;
+}
+
+@keyframes tejas {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hands {
+  width: 90px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+label.logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0px 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active {
+  background: #e9e9e9;
+  color: #000;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 33px;
+  color: #fff;
+  /* color: #000; */
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 160vh;
+    background: #2c3e50;
+    margin-top: 90px;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 20;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  body {
+    background: url("./img/bg.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 16px;
+    width: 250px;
+    margin: 5px 0px;
+    border-radius: 3px;
+  }
+}
+
+/* form */
+
+.container {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  position: relative;
+  top: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  font-size: 17px;
+  width: 350px;
+  margin: 5px 0px;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 9px 10px;
+  margin-top: 10px;
+  width: 350px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+footer {
+  position: absolute;
+  top: 210vh;
+  color: #fff;
+  margin: 0;
+}
+p {
+  text-align: center;
+  width: 100vw;
+}
+
+.picks {
+  height: 250px;
+  width: 100vw;
+  backdrop-filter: blur(20px);
+  position: relative;
+  top: 1000px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.titleHeading {
+  color: #fff;
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  left: 40%;
+}
+
+.box1 {
+  height: 250px;
+  width: 350px;
+  margin-right: 50px;
+  background: url("../img/about.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.box2 {
+  height: 250px;
+  width: 350px;
+  background-color: black;
+  margin-right: 50px;
+  background: url("../img/gg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.box3 {
+  height: 250px;
+  width: 350px;
+  background-color: black;
+  margin-right: 50px;
+  background: url("../img/aa.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 450px) {
+  body {
+    background: url("../img/boy.jpeg") no-repeat center fixed;
+    background-size: cover;
+  }
+
+  .container {
+    position: absolute;
+    top: 70%;
+    left: 5px;
+    color: #fff;
+  }
+
+  .container h2 {
+    font-weight: bolder;
+    text-align: center;
+    color: gray;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    width: 200px;
+    margin: 5px 0px;
+    border-radius: 3px;
+  }
+
+  .btn {
+    padding: 9px 10px;
+    margin-top: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: lightslategrey;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .btn:hover {
+    color: #fff;
+    background: lightcoral;
+  }
+
+  .picks {
+    height: 250px;
+    width: 100vw;
+    /* backdrop-filter: blur(20px); */
+    position: relative;
+    top: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .titleHeading {
+    color: #fff;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    left: 2%;
+    /* width: 100vw; */
+    border-bottom: 10px solid lightslategrey;
+  }
+
+  .box1 {
+    height: 100px;
+    width: 150px;
+    margin-right: 50px;
+    background: url("../img/about.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  .box2 {
+    height: 100px;
+    width: 150px;
+    background-color: black;
+    margin-right: 50px;
+    background: url("../img/gg.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  .box3 {
+    height: 100px;
+    width: 150px;
+    background-color: black;
+    margin-right: 50px;
+    background: url("../img/aa.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 4px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.336);
+  }
+}
