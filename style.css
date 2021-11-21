@@ -10,7 +10,7 @@
 
 body {
   font-family: sans-serif;
-  background: url("../img/bg.jpg") no-repeat center fixed;
+  background: url("./img/bg.jpg") no-repeat center fixed;
   background-size: cover;
   height: 210vh;
 }
@@ -237,7 +237,7 @@ p {
   height: 250px;
   width: 350px;
   margin-right: 50px;
-  background: url("../img/about.jpg") no-repeat center;
+  background: url("./img/about.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -246,7 +246,7 @@ p {
   width: 350px;
   background-color: black;
   margin-right: 50px;
-  background: url("../img/gg.jpg") no-repeat center;
+  background: url("./img/gg.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -255,13 +255,13 @@ p {
   width: 350px;
   background-color: black;
   margin-right: 50px;
-  background: url("../img/aa.jpg") no-repeat center;
+  background: url("./img/aa.jpg") no-repeat center;
   background-size: cover;
 }
 
 @media (max-width: 450px) {
   body {
-    background: url("../img/boy.jpeg") no-repeat center fixed;
+    background: url("./img/boy.jpeg") no-repeat center fixed;
     background-size: cover;
   }
 
@@ -342,7 +342,7 @@ p {
     height: 100px;
     width: 150px;
     margin-right: 50px;
-    background: url("../img/about.jpg") no-repeat center;
+    background: url("./img/about.jpg") no-repeat center;
     background-size: cover;
     margin-bottom: 10px;
   }
@@ -352,7 +352,7 @@ p {
     width: 150px;
     background-color: black;
     margin-right: 50px;
-    background: url("../img/gg.jpg") no-repeat center;
+    background: url("./img/gg.jpg") no-repeat center;
     background-size: cover;
     margin-bottom: 10px;
   }
@@ -362,7 +362,7 @@ p {
     width: 150px;
     background-color: black;
     margin-right: 50px;
-    background: url("../img/aa.jpg") no-repeat center;
+    background: url("./img/aa.jpg") no-repeat center;
     background-size: cover;
     margin-bottom: 10px;
   }
